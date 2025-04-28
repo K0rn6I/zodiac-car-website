@@ -1,6 +1,6 @@
 // Массив машин с описаниями и изображениями
 const cars = [
-  { name: "BMW F90 M5 Competition", description: "Performanță extremă și stil inconfundabil.", image: "https://upload.wikimedia.org/wikipedia/commons/e/e2/BMW_M5_F90_Competition_Front_2021.jpg" },
+  { name: "BMW F90 M5 Competition", description: "Performanță extremă și stil inconfundabil.", image: "https://i.ytimg.com/vi/iZt7Fwu91FI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCl1APnpyrZMoSNVvKsWhBIw72qqg" },
   { name: "Mercedes-AMG GT", description: "Sportivă, puternică și excepțională pe drum.", image: "https://upload.wikimedia.org/wikipedia/commons/f/f8/2019_Mercedes-AMG_GT_R.jpg" },
   { name: "Audi RS6 Avant", description: "Puternică și sportivă, dar practică pentru familie.", image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Audi_RS6_C8_IMG_3976.jpg" },
   { name: "Tesla Model S", description: "Inovatoare și futuristică, pentru vizionari.", image: "https://upload.wikimedia.org/wikipedia/commons/5/58/Tesla_Model_S.jpg" },

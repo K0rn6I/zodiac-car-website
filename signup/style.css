@@ -5,28 +5,48 @@
 }
 
 body {
-  background: linear-gradient(to right, #1a1a1a, #2c003e);
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%); /* Космический градиент */
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Добавляем эффект звёзд */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .form-container {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 60px; /* Увеличиваем внутренние отступы */
+  background: rgba(255, 255, 255, 0.05); /* Полупрозрачный фон для формы */
+  padding: 60px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   width: 100%;
-  max-width: 600px; /* Увеличиваем ширину формы */
-  color: #ffffff;
+  max-width: 800px; /* Увеличиваем ширину формы */
+  color: #ffffff; /* Светлый текст для лучшей читаемости */
+  backdrop-filter: blur(10px); /* Эффект размытия фона */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 h2 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 form {
@@ -39,6 +59,7 @@ label {
   margin-top: 15px;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #bb86fc; /* Цвет меток в космическом стиле */
 }
 
 .password-container {
@@ -52,8 +73,18 @@ input {
   margin-bottom: 15px;
   border: 2px solid #6200ea;
   border-radius: 8px;
-  background: rgba(255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   color: #ffffff;
+}
+
+/* Исправляем жёлтый фон автозаполнения */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  border: 2px solid #6200ea !important;
 }
 
 .toggle-password {
@@ -81,6 +112,7 @@ button {
 
 button:hover {
   background: #3700b3;
+  box-shadow: 0 0 15px rgba(98, 0, 234, 0.5);
 }
 
 p {
@@ -96,4 +128,5 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: #ffffff;
 }
