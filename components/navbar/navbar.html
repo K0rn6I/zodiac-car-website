@@ -1,13 +1,23 @@
-<nav class="navbar">
-  <div class="logo">Zodia & Mașina</div>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="../main/index.html">Acasă</a></li>
-    <li><a href="../about/index.html">Despre</a></li>
-    <li><a href="#" onclick="logout()">Deconectare</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="navbar.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Zodia & Mașina</div>
+    <div class="hamburger" onclick="parent.toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="../main/index.html">Acasă</a></li>
+      <li><a href="../about/index.html">Despre</a></li>
+      <li><a href="#" onclick="parent.logout()">Deconectare</a></li>
+    </ul>
+  </nav>
+  <script src="navbar.js"></script>
+</body>
+</html>

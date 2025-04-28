@@ -5,19 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zodia ta, mașina ta</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="../components/navbar.css" />
+  <link rel="stylesheet" href="../navbar/navbar.css" />
+  <link rel="stylesheet" href="../footer/footer.css" />
 </head>
 <body>
-  <div id="navbar"></div>
-
   <header>
     <h1>Bine ai venit, <span id="username">Utilizator</span>!</h1>
   </header>
-
   <main>
     <h2>Zodia ta, mașina ta</h2>
     <p>Alege-ți zodia și descoperă ce mașină ți se potrivește!</p>
-
     <div class="selection-container">
       <label for="zodiac-select">Alege zodia:</label>
       <select id="zodiac-select">
@@ -37,11 +34,11 @@
       </select>
       <button id="show-button">Arată mașina</button>
     </div>
-
     <div id="result" class="result-container"></div>
   </main>
 
-  <script src="../components/navbar.js"></script>
+  <script src="../navbar/navbar.js"></script>
+  <script src="../footer/footer.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

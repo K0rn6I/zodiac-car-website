@@ -5,8 +5,6 @@
   padding: 20px 0;
   text-align: center;
   width: 100%;
-  position: relative;
-  bottom: 0;
 }
 
 /* Стили для содержимого футера */
@@ -33,4 +31,24 @@
 
 .footer-links li a:hover {
   text-decoration: underline;
+}
+
+/* Убедимся, что футер прилипает к низу */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }
